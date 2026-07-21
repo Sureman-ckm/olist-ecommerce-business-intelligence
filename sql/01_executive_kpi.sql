@@ -1,26 +1,36 @@
-SELECT COUNT(*) AS total_orders
-FROM orders;
-
 SELECT
-ROUND(SUM(price),2) AS total_gmv
-FROM order_items;
 
-SELECT
-ROUND(SUM(price)/COUNT(DISTINCT order_id),2) AS average_order_value
-FROM order_items;
+    ROUND(SUM(oi.price), 2) AS total_gmv,
 
-SELECT COUNT(DISTINCT seller_id)
-FROM sellers;
+    COUNT(DISTINCT o.order_id) AS total_orders,
 
-SELECT COUNT(*)
-FROM products;
+    COUNT(DISTINCT oi.seller_id) AS active_sellers,
 
-SELECT
-seller_id,
-SUM(price) AS gmv
-FROM order_items
-GROUP BY seller_id
-ORDER BY gmv DESC
-LIMIT 10;
+    COUNT(DISTINCT c.customer_unique_id) AS active_customers,
 
+    COUNT(DISTINCT oi.product_id) AS total_products,
 
+    ROUND(
+        SUM(oi.price) / COUNT(DISTINCT o.order_id),
+        2
+    ) AS avg_order_value,
+
+    ROUND(
+        COUNT(*) * 1.0 / COUNT(DISTINCT o.order_id),
+        2
+    ) AS avg_items_per_order,
+
+    ROUND(
+        AVG(oi.freight_value),
+        2
+    ) AS avg_shipping_fee
+
+FROM orders o
+
+JOIN order_items oi
+ON o.order_id = oi.order_id
+
+JOIN customers c
+ON o.customer_id = c.customer_id
+
+WHERE o.order_status = 'delivered';

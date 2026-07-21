@@ -45,3 +45,41 @@ Instead of focusing only on SQL queries or visualization, the project follows a 
 - **Seller revenue was highly concentrated**, with Pareto analysis showing that a relatively small number of sellers generated the majority of total GMV.
 - **Longer delivery times were associated with lower customer review scores**, highlighting the importance of logistics performance.
 - **São Paulo (SP)** generated the highest marketplace GMV, making it the platform's strongest regional market.
+
+- ---
+
+## Project Workflow
+
+```text
+Raw CSV Files
+        │
+        ▼
+ PostgreSQL Database
+        │
+        ▼
+ Data Cleaning & SQL Analysis
+        │
+        ▼
+ KPI Development
+        │
+        ▼
+ Tableau Dashboard
+        │
+        ▼
+ Business Insights
+        │
+        ▼
+ Business Recommendations
+```
+
+This project follows a complete Business Intelligence workflow, starting from raw transactional data and ending with business insights that support marketplace decision-making.
+
+---
+
+## Project Highlights
+
+- Designed an end-to-end Business Intelligence workflow from raw data to business recommendations.
+- Built a relational PostgreSQL database by integrating multiple e-commerce tables.
+- Developed SQL queries to analyze marketplace performance across categories, sellers, customers, logistics, and regions.
+- Designed an executive Tableau dashboard to communicate KPIs and business insights.
+- Applied business thinking to translate analytical findings into strategic recommendations for marketplace operations.

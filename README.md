@@ -34,4 +34,14 @@ Instead of focusing only on SQL queries or visualization, the project follows a 
 - **Query Language:** SQL
 - **Visualization:** Tableau
 - **Business Analysis:** KPI Design, Category Analysis, Seller Analysis, Customer Analysis
-- **Data Domain:** Brazil E-commerce Performance 
+- **Data Domain:** Brazil E-commerce Performance
+
+- ---
+
+## Key Business Findings
+
+- **Health & Beauty** generated the highest Gross Merchandise Value (GMV), indicating strong demand driven by transaction volume.
+- **Watches & Gifts** recorded the highest average selling price, representing a premium product segment.
+- **Seller revenue was highly concentrated**, with Pareto analysis showing that a relatively small number of sellers generated the majority of total GMV.
+- **Longer delivery times were associated with lower customer review scores**, highlighting the importance of logistics performance.
+- **São Paulo (SP)** generated the highest marketplace GMV, making it the platform's strongest regional market.

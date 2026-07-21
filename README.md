@@ -1,4 +1,4 @@
-# Brazil E-commerce Business Intelligence Dashboard
+# Brazil E-commerce Performance Dashboard
 
 An end-to-end Business Intelligence project built with **PostgreSQL**, **SQL**, and **Tableau** using the **Olist Brazilian E-commerce Dataset**.
 
@@ -25,3 +25,13 @@ Instead of focusing only on SQL queries or visualization, the project follows a 
 - Create an interactive Tableau dashboard
 - Generate business insights
 - Provide business recommendations
+
+---
+
+## Tech Stack
+
+- **Database:** PostgreSQL
+- **Query Language:** SQL
+- **Visualization:** Tableau
+- **Business Analysis:** KPI Design, Category Analysis, Seller Analysis, Customer Analysis
+- **Data Domain:** Brazil E-commerce Performance 

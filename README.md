@@ -83,3 +83,26 @@ This project follows a complete Business Intelligence workflow, starting from ra
 - Developed SQL queries to analyze marketplace performance across categories, sellers, customers, logistics, and regions.
 - Designed an executive Tableau dashboard to communicate KPIs and business insights.
 - Applied business thinking to translate analytical findings into strategic recommendations for marketplace operations.
+
+- ---
+
+## Repository Structure
+
+```text
+├── README.md                           # Project overview
+├── LICENSE                             # MIT License
+├── Brazil E-commerce Performance Dashboard.png
+│
+├── sql/
+│   ├── 01_executive_kpi.sql
+│   ├── 02_category_analysis.sql
+│   ├── 03_seller_analysis.sql
+│   ├── 04_customer_analysis.sql
+│   ├── 05_logistics_analysis.sql
+│   └── 06_pareto_analysis.sql
+│
+├── tableau/
+│   └── Olist.twb
+│
+└── docs/
+```

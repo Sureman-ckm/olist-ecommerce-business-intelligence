@@ -105,4 +105,12 @@ This project follows a complete Business Intelligence workflow, starting from ra
 │   └── Olist.twb
 │
 └── docs/
-```
+
+---
+
+## How to Use
+
+1. Review the dashboard overview in the project image.
+2. Explore the SQL scripts in the `sql` folder.
+3. Open the Tableau workbook (`.twb`) in Tableau Desktop to interact with the dashboard.
+4. Read the key business findings and recommendations in the README.
